@@ -1,4 +1,5 @@
 import { Shield, Zap, TrendingUp, Users, Clock, Award } from 'lucide-react';
+import AnimatedSection from './AnimatedSection';
 
 const features = [
   {
@@ -35,7 +36,7 @@ const features = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-20 bg-white dark:bg-gray-900">
+    <AnimatedSection as="section" className="py-20 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
@@ -65,6 +66,6 @@ export default function WhyChooseUs() {
           ))}
         </div>
       </div>
-    </section>
+    </AnimatedSection>
   );
 }

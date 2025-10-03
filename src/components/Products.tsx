@@ -1,4 +1,5 @@
 import { Target, Clock, Activity, Brain, BarChart3 } from 'lucide-react';
+import AnimatedSection from './AnimatedSection';
 
 const products = [
   {
@@ -45,7 +46,7 @@ const products = [
 
 export default function Products() {
   return (
-    <section id="products" className="py-20 bg-gray-50 dark:bg-gray-800">
+    <AnimatedSection as="section" id="products" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
@@ -95,6 +96,6 @@ export default function Products() {
           ))}
         </div>
       </div>
-    </section>
+    </AnimatedSection>
   );
 }

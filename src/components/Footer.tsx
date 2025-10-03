@@ -1,4 +1,5 @@
 import { Twitter, Linkedin, Youtube, Mail } from 'lucide-react';
+import AnimatedSection from './AnimatedSection';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -25,7 +26,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-gray-900 text-gray-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <AnimatedSection className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
           <div className="col-span-2">
             <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent mb-4">
@@ -122,7 +123,7 @@ export default function Footer() {
             Trading involves risk and is not suitable for all investors. Past performance is not indicative of future results.
           </p>
         </div>
-      </div>
+      </AnimatedSection>
     </footer>
   );
 }

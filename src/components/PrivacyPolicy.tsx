@@ -1,6 +1,8 @@
+import AnimatedSection from './AnimatedSection';
+
 export default function PrivacyPolicy() {
     return (
-        <section id="privacy" className="py-20 bg-gray-50 dark:bg-gray-800">
+        <AnimatedSection as="section" id="privacy" className="py-20 bg-gray-50 dark:bg-gray-800">
             <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-2">Privacy Policy</h1>
                 <p className="text-gray-600 dark:text-gray-400 mb-10">Last updated: {new Date().toLocaleDateString()}</p>
@@ -84,7 +86,7 @@ export default function PrivacyPolicy() {
                     </p>
                 </div>
             </div>
-        </section>
+        </AnimatedSection>
     );
 }
 

@@ -29,7 +29,7 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
   return (
     <nav
       className={`fixed w-full z-50 transition-all duration-300 ${scrolled
-        ? 'bg-white/90 dark:bg-black/90 backdrop-blur-md shadow-lg'
+        ? 'bg-white/70 dark:bg-black/50 backdrop-blur-lg shadow-md border-b  dark:border-white/10'
         : 'bg-transparent'
         }`}
     >

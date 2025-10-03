@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import AnimatedSection from './AnimatedSection';
 import { Plus, Minus } from 'lucide-react';
 
 const faqs = [
@@ -44,7 +45,7 @@ export default function FAQ() {
   };
 
   return (
-    <section id="faq" className="py-20 bg-gray-50 dark:bg-gray-800">
+    <AnimatedSection as="section" id="faq" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
@@ -77,9 +78,8 @@ export default function FAQ() {
                 </div>
               </button>
               <div
-                className={`transition-all duration-300 overflow-hidden ${
-                  openIndex === index ? 'max-h-96' : 'max-h-0'
-                }`}
+                className={`transition-all duration-300 overflow-hidden ${openIndex === index ? 'max-h-96' : 'max-h-0'
+                  }`}
               >
                 <div className="px-8 pb-6 text-gray-600 dark:text-gray-400 leading-relaxed">
                   {faq.answer}
@@ -98,6 +98,6 @@ export default function FAQ() {
           </button>
         </div>
       </div>
-    </section>
+    </AnimatedSection>
   );
 }
